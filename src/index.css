@@ -1,13 +1,194 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(35, 35, 35);
+}
+
+header{
+   padding: 50px 20px;
+}
+
+header h1{
+  color: yellow;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  margin-top: -30px;
+  font-style: italic;
+  text-shadow: 2px 5px black;
+}
+header h2{
+  color: yellow;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+margin: 10px;
+  font-style: italic;
+  text-shadow: 2px 5px black;
+}
+
+main{
+  width: 100%;
+ /*
+ */ max-width: 960px;
+  margin: 0 auto;
+}
+
+section{
+  padding: 25px;
+}
+
+.searchbox{
+  display: block;
+  width: 100%;
+  padding:  10px;
+  
+
+  border: none;
+  outline: none;
+  background: none;
+
+  background-color: #eee;
+  border-radius: 10px;
+
+  color: rgb(25, 25, 25);
+  font-size: 13px;
+  font-weight: 300;
+
+  transition: 0.4s ease-out;
+}
+.searchbox:focus{
+  box-shadow: 1px 1px 5px 10px  purple;
+}
+
+.results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+.results .result{
+  width: 26.6%;
+  min-width: 250px;
+ margin: 15px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+
+
+}
+
+
+
+.result:hover{
+  
+  transform: scale(1.02);
+  box-shadow: 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.results .result img{
+  display: block;
+  width: 100%;
+
+
+}
+
+
+
+.results .result h3{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  background: #445565;
+  flex: 1 1 100%;
+  transition: 0.4s ease-out;
+  text-align: center;
+}
+
+.results .result:hover h3{
+  background-color: white;
+  color: black;
+}
+
+.popup{
+  position: fixed;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  top: 12%;
+  left: 12%;
+  width: 70%;
+  height: 60%;
+  background-color: rgb(130, 30, 30);
+  border-radius: 5px;
+  box-shadow: 5px 15px rgba(0, 0, 0, 0.9);
+ 
+}
+
+.popup .content{
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  
+
+  color: #eee;
+}
+
+.popup .content .h2{
+font-size: 20px;
+font-weight: 600;
+font-style: italic;
+
+}
+
+.popup .content .rating{
+  margin-bottom: 30px;
+  color: yellow;
+}
+
+.popup .content .plot{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px 30px;
+}
+
+.popup .content .plot img{
+  flex: 1 1 50%;
+}
+
+.popup .content .plot p{
+  flex: 1 1 50%;
+  padding: 15px;
+}
+
+.popup .content .close{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+
+  background: tomato;
+  color: azure;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  transition: 0.2s ease-out;
+}
+
+.popup .content .close:hover{
+  background: #223343;
+  box-shadow: 1px 2px black;
 }
