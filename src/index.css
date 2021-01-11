@@ -5,7 +5,9 @@
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: rgb(35, 35, 35);
+  background: url('./images/moviebg.jpg');
+
+  
 }
 
 header{
@@ -41,12 +43,17 @@ main{
 }
 
 section{
-  padding: 25px;
+  padding: 5px;
+}
+.searchbox-wrap{
+  display: flex;
+  justify-content: center;
+  
 }
 
 .searchbox{
   display: block;
-  width: 100%;
+  width: 60%;
   padding:  10px;
   
 
